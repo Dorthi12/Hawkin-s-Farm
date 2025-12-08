@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Crop | Hawkin's Farm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Hawkin's Farm</div>
+  <div class="nav-links">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="products.html">Marketplace</a>
+    <a href="upload.html" class="active">Upload Crop</a>
+    <a href="orders.html">Orders</a>
+  </div>
+  <button class="logout-btn">Logout</button>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h2 style="margin-bottom: 12px;">Upload New Crop</h2>
+    <p style="font-size: 13px; color: #4b5563; margin-bottom: 16px;">
+      Upload a clear image of your crop. Our ML model will classify the crop and suggest a suitable price.
+    </p>
+
+    <form>
+      <div class="input-group">
+        <label>Crop Title</label>
+        <input type="text" placeholder="e.g., Premium Wheat" required>
+      </div>
+
+      <div class="input-group">
+        <label>Location</label>
+        <input type="text" placeholder="City / Village" required>
+      </div>
+
+      <div class="input-group">
+        <label>Quantity (kg)</label>
+        <input type="number" min="1" placeholder="500" required>
+      </div>
+
+      <div class="input-group">
+        <label>Upload Crop Image</label>
+        <input type="file" accept="image/*" required>
+      </div>
+
+      <div class="input-group">
+        <label>Description (optional)</label>
+        <textarea rows="3" placeholder="Any additional information…"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Upload & Get Suggestions</button>
+      <br><br>
+<a href="dashboard.html" class="btn btn-outline">Back to Dashboard</a>
+
+    </form>
+  </div>
+</main>
+
+</body>
+</html>
