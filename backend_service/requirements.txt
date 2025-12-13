@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pymongo
+dnspython
+certifi
+joblib
+xgboost
+scikit-learn
+pandas
+numpy
+python-dotenv
+scipy
